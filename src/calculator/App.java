@@ -13,6 +13,7 @@ public class App {
 
             System.out.print("사칙연산 기호(+,-,*,/)를 입력하세요: ");
             char operator = sc.next().charAt(0);
+            OperatorType operatorType = OperatorType.fromChar(operator);
 
             System.out.print("두 번째 숫자를 입력하세요: ");
             int num2 = sc.nextInt();
